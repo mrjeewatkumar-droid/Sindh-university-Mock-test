@@ -133,5 +133,10 @@ const CONFIG = {
   TIME_LIMIT_MINUTES: 90,
   MAX_TAB_VIOLATIONS: 3,
   ADMIN_CODE: "sindh2026",
-  STORAGE_KEY: "su_entry_test_attempts_v1"
+  STORAGE_KEY: "su_entry_test_attempts_v1",
+  /* Central results dashboard (Google Sheet via Apps Script).
+     Paste the Web app URL here once deployed; submissions are then
+     logged to the owner's sheet automatically. Leave "" to disable. */
+  RESULTS_URL: "",
+  RESULTS_SECRET: "6768f152907c8988bb66b9522bb9afd1886fd097740fcef5"
 };
