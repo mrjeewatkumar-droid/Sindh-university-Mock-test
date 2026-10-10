@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sindh University Entry Test — 100 MCQs Mock Practice Paper</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ================= START SCREEN ================= -->
+<div id="screen-start" class="screen">
+  <div class="card start-card">
+    <div class="brand">🎓 Sindh University</div>
+    <h1>Entry Test — Mock Practice Paper</h1>
+    <p class="subtitle">100 MCQs &nbsp;·&nbsp; 100 Marks &nbsp;·&nbsp; 90 Minutes</p>
+
+    <div class="chips">
+      <span class="chip">English: 30</span>
+      <span class="chip">General Knowledge: 20</span>
+      <span class="chip">Mathematics: 20</span>
+      <span class="chip">IQ: 10</span>
+      <span class="chip">Everyday Science &amp; Computer: 20</span>
+    </div>
+
+    <div class="rules">
+      <h3>Test Instructions</h3>
+      <ul>
+        <li>Enter your full name and a <strong>valid email address</strong>. One email address can be used <strong>only once</strong>.</li>
+        <li>Each question has exactly <strong>one correct option</strong>; you can select only one option per question.</li>
+        <li>Total marks: <strong>100</strong>. <strong>No negative marking.</strong></li>
+        <li>The test stays open for <strong>90 minutes</strong> and auto-submits when time runs out.</li>
+        <li><strong>Tab switching is restricted.</strong> Leaving this tab counts as a violation — <strong>3 violations will auto-submit your test</strong>.</li>
+        <li>Your result is shown immediately after submission, and your attempt is saved in the test history.</li>
+      </ul>
+    </div>
+
+    <div id="resume-box" class="resume-box hidden">
+      <p>You have a test in progress on this device.</p>
+      <button id="btn-resume" class="btn secondary">Resume Test (<span id="resume-time"></span> left)</button>
+    </div>
+
+    <div class="form">
+      <label>Full Name
+        <input type="text" id="input-name" placeholder="e.g. Ahmed Raza" autocomplete="name">
+      </label>
+      <label>Email Address
+        <input type="email" id="input-email" placeholder="e.g. ahmed@example.com" autocomplete="email">
+      </label>
+      <div id="start-error" class="error hidden"></div>
+      <button id="btn-start" class="btn primary">Start Test</button>
+    </div>
+
+    <button id="btn-admin" class="linklike">Publisher: view test history</button>
+  </div>
+</div>
+
+<!-- ================= QUIZ SCREEN ================= -->
+<div id="screen-quiz" class="screen hidden">
+  <header class="quiz-header">
+    <div class="qh-left">
+      <div class="qh-title">Sindh University Mock Test</div>
+      <div class="qh-candidate" id="qh-candidate"></div>
+    </div>
+    <div class="qh-right">
+      <div class="timer" id="timer">90:00</div>
+      <div class="answered" id="answered-count">0 / 100 answered</div>
+      <div class="violations" id="violations">Tab violations: 0/3</div>
+      <button id="btn-submit" class="btn primary small">Submit Test</button>
+    </div>
+  </header>
+
+  <div id="palette" class="palette"></div>
+
+  <main id="questions" class="questions"></main>
+
+  <div class="quiz-footer">
+    <button id="btn-submit-bottom" class="btn primary">Submit Test</button>
+    <p class="note">Make sure you have reviewed all sections before submitting.</p>
+  </div>
+</div>
+
+<!-- ================= RESULT SCREEN ================= -->
+<div id="screen-result" class="screen hidden">
+  <div class="card result-card">
+    <div class="brand">🎓 Sindh University</div>
+    <h1>Test Result</h1>
+    <p class="subtitle" id="result-candidate"></p>
+
+    <div class="score-box">
+      <div class="score-big"><span id="result-score">0</span><span class="score-of">/ 100</span></div>
+      <div class="score-sub"><span id="result-pct">0%</span> &nbsp;·&nbsp; <span id="result-note"></span></div>
+      <div class="score-meta" id="result-meta"></div>
+    </div>
+
+    <h3>Section-wise Breakdown</h3>
+    <table class="breakdown" id="result-breakdown">
+      <thead><tr><th>Section</th><th>Questions</th><th>Correct</th><th>Marks</th></tr></thead>
+      <tbody></tbody>
+    </table>
+
+    <div class="result-actions">
+      <button id="btn-download-csv" class="btn secondary">Download Result (CSV)</button>
+      <button id="btn-new" class="btn secondary">Back to Start</button>
+    </div>
+
+    <h3>Answer Review</h3>
+    <div id="result-review" class="review"></div>
+  </div>
+</div>
+
+<!-- ================= ADMIN MODAL ================= -->
+<div id="admin-modal" class="modal hidden">
+  <div class="card admin-card">
+    <h2>Test History (Publisher)</h2>
+    <div id="admin-login">
+      <label>Publisher code
+        <input type="password" id="input-admin-code" placeholder="Enter publisher code">
+      </label>
+      <div id="admin-error" class="error hidden"></div>
+      <button id="btn-admin-login" class="btn primary">View History</button>
+    </div>
+    <div id="admin-view" class="hidden">
+      <div class="admin-actions">
+        <button id="btn-export-all" class="btn secondary small">Download All (CSV)</button>
+        <button id="btn-clear-history" class="btn danger small">Clear History</button>
+      </div>
+      <div class="table-wrap"><table class="history" id="history-table">
+        <thead><tr><th>#</th><th>Name</th><th>Email</th><th>Score</th><th>%</th><th>Violations</th><th>Submitted</th><th>Auto</th></tr></thead>
+        <tbody></tbody>
+      </table></div>
+    </div>
+    <button id="btn-admin-close" class="btn secondary">Close</button>
+  </div>
+</div>
+
+<div id="toast" class="toast hidden"></div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
