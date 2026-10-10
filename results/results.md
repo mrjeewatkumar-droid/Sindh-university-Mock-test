@@ -1,6 +1,6 @@
 # Test Results
 
-Total attempts: 17
+Total attempts: 16
 
 | # | Timestamp | Name | Email | Score | Total | % | English | GK | Math | IQ | Science | Violations | Auto | Reason |
 |---|-----------|------|-------|-------|-------|---|---------|----|------|----|---------|------------|------|--------|
@@ -8,16 +8,15 @@ Total attempts: 17
 | 2 | 2026-10-10 13:06:50 | Sirpal rajput | sirpal849@gmail.com | 2 | 100 | 2% | 2/30 | 0/20 | 0/20 | 0/10 | 0/20 | 3 | Yes | Auto-submitted: tab-switching limit reached |
 | 3 | 2026-10-10 13:04:08 | Sirpal Rajput | sksodhasodha914@gmail.com | 1 | 100 | 1% | 1/30 | 0/20 | 0/20 | 0/10 | 0/20 | 3 | Yes | Auto-submitted: tab-switching limit reached |
 | 4 | 2026-10-10 13:01:28 | Qamar kumbhar | sarmadkumbhar123@gmail.com | 4 | 100 | 4% | 4/30 | 0/20 | 0/20 | 0/10 | 0/20 | 3 | Yes | Auto-submitted: tab-switching limit reached |
-| 5 | 2026-10-10 12:40:36 | Test Candidate | test@example.com | 88 | 100 | 88% | 26/30 |  |  |  |  | 0 | No | Submitted by candidate |
-| 6 | 2026-10-10 13:38:36 | Ahmed | ahmedraza@gmail.com | 84 | 100 | 84% | 23/30 | 18/20 | 16/20 | 8/10 | 19/20 | 3 | Yes | Auto-submitted: tab-switching limit reached |
-| 7 | 2026-10-10 13:38:07 | Akak | akakbba835@gmail.com | 34 | 100 | 34% | 17/30 | 16/20 | 1/20 | 0/10 | 0/20 | 3 | Yes | Auto-submitted: tab-switching limit reached |
-| 8 | 2026-10-10 13:36:16 | Jeewat Kumar8 | jeewatkumar17@gmail.com | 61 | 100 | 61% | 17/30 | 14/20 | 9/20 | 6/10 | 15/20 | 1 | No | Submitted by candidate |
-| 9 | 2026-10-10 13:32:03 | Sk sodha Sodha | singhsirpal66@gmail.com | 76 | 100 | 76% | 28/30 | 20/20 | 10/20 | 9/10 | 9/20 | 0 | No | Submitted by candidate |
-| 10 | 2026-10-10 13:31:08 | Lal | soorovalasai@gmail.com | 44 | 100 | 44% | 11/30 | 12/20 | 3/20 | 6/10 | 12/20 | 1 | No | Submitted by candidate |
-| 11 | 2026-10-10 14:30:57 | Govind Rai | lovekumarjunior09@gmail.com | 81 | 100 | 81% | 26/30 | 16/20 | 15/20 | 6/10 | 18/20 | 0 | No | Submitted by candidate |
-| 12 | 2026-10-10 14:27:32 | Kumar | circketbaz07@gmail.com | 27 | 100 | 27% | 14/30 | 11/20 | 2/20 | 0/10 | 0/20 | 3 | Yes | Auto-submitted: tab-switching limit reached |
-| 13 | 2026-10-10 14:16:18 | Qamar Kumbhar | kumbharqamar143@gmail.com | 68 | 100 | 68% | 18/30 | 12/20 | 12/20 | 8/10 | 18/20 | 2 | No | Submitted by candidate |
-| 14 | 2026-10-10 13:51:39 | Akak Bba | govindraimeghwar10@gmail.com | 33 | 100 | 33% | 15/30 | 16/20 | 2/20 | 0/10 | 0/20 | 3 | Yes | Auto-submitted: tab-switching limit reached |
-| 15 | 2026-10-10 13:44:07 | Raja | aneelmalani3@gmail.com | 13 | 100 | 13% | 13/30 | 0/20 | 0/20 | 0/10 | 0/20 | 3 | Yes | Auto-submitted: tab-switching limit reached |
-| 16 | 2026-10-10 15:20:33 | Wadero | sahibaneel5@gmail.com | 29 | 100 | 29% | 12/30 | 14/20 | 3/20 | 0/10 | 0/20 | 2 | No | Submitted by candidate |
-| 17 | 2026-10-10 15:04:34 | AnEeL MaLaNi | ag6578556@gmail.com | 14 | 100 | 14% | 12/30 | 2/20 | 0/20 | 0/10 | 0/20 | 3 | Yes | Auto-submitted: tab-switching limit reached |
+| 5 | 2026-10-10 13:38:36 | Ahmed | ahmedraza@gmail.com | 84 | 100 | 84% | 23/30 | 18/20 | 16/20 | 8/10 | 19/20 | 3 | Yes | Auto-submitted: tab-switching limit reached |
+| 6 | 2026-10-10 13:38:07 | Akak | akakbba835@gmail.com | 34 | 100 | 34% | 17/30 | 16/20 | 1/20 | 0/10 | 0/20 | 3 | Yes | Auto-submitted: tab-switching limit reached |
+| 7 | 2026-10-10 13:36:16 | Jeewat Kumar8 | jeewatkumar17@gmail.com | 61 | 100 | 61% | 17/30 | 14/20 | 9/20 | 6/10 | 15/20 | 1 | No | Submitted by candidate |
+| 8 | 2026-10-10 13:32:03 | Sk sodha Sodha | singhsirpal66@gmail.com | 76 | 100 | 76% | 28/30 | 20/20 | 10/20 | 9/10 | 9/20 | 0 | No | Submitted by candidate |
+| 9 | 2026-10-10 13:31:08 | Lal | soorovalasai@gmail.com | 44 | 100 | 44% | 11/30 | 12/20 | 3/20 | 6/10 | 12/20 | 1 | No | Submitted by candidate |
+| 10 | 2026-10-10 14:30:57 | Govind Rai | lovekumarjunior09@gmail.com | 81 | 100 | 81% | 26/30 | 16/20 | 15/20 | 6/10 | 18/20 | 0 | No | Submitted by candidate |
+| 11 | 2026-10-10 14:27:32 | Kumar | circketbaz07@gmail.com | 27 | 100 | 27% | 14/30 | 11/20 | 2/20 | 0/10 | 0/20 | 3 | Yes | Auto-submitted: tab-switching limit reached |
+| 12 | 2026-10-10 14:16:18 | Qamar Kumbhar | kumbharqamar143@gmail.com | 68 | 100 | 68% | 18/30 | 12/20 | 12/20 | 8/10 | 18/20 | 2 | No | Submitted by candidate |
+| 13 | 2026-10-10 13:51:39 | Akak Bba | govindraimeghwar10@gmail.com | 33 | 100 | 33% | 15/30 | 16/20 | 2/20 | 0/10 | 0/20 | 3 | Yes | Auto-submitted: tab-switching limit reached |
+| 14 | 2026-10-10 13:44:07 | Raja | aneelmalani3@gmail.com | 13 | 100 | 13% | 13/30 | 0/20 | 0/20 | 0/10 | 0/20 | 3 | Yes | Auto-submitted: tab-switching limit reached |
+| 15 | 2026-10-10 15:20:33 | Wadero | sahibaneel5@gmail.com | 29 | 100 | 29% | 12/30 | 14/20 | 3/20 | 0/10 | 0/20 | 2 | No | Submitted by candidate |
+| 16 | 2026-10-10 15:04:34 | AnEeL MaLaNi | ag6578556@gmail.com | 14 | 100 | 14% | 12/30 | 2/20 | 0/20 | 0/10 | 0/20 | 3 | Yes | Auto-submitted: tab-switching limit reached |
