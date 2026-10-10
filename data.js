@@ -141,5 +141,9 @@ const CONFIG = {
   RESULTS_SECRET: "6768f152907c8988bb66b9522bb9afd1886fd097740fcef5",
   /* Zero-setup results collector: every submission is POSTed here and an
      hourly job mirrors new results into the repo (results/results.md). */
-  COLLECTOR_URL: "https://webhook.site/407f6b18-2aff-4ef6-acef-f773898cb42d"
+  COLLECTOR_URL: "https://webhook.site/407f6b18-2aff-4ef6-acef-f773898cb42d",
+  /* Test availability window. After this moment no new attempts can start
+     and any in-progress test is auto-submitted. ISO 8601 with timezone
+     offset; "" disables the closing time. */
+  TEST_CLOSE_AT: "2026-10-11T09:00:00+05:00"
 };
