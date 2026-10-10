@@ -45,7 +45,21 @@
     try { sessionStorage.removeItem(SESSION_KEY); } catch (e) {}
   }
 
-  /* ---------- toast ---------- */
+  /* ---------- test availability window ---------- */
+  function closeAt() {
+    if (!CONFIG.TEST_CLOSE_AT) return null;
+    var t = Date.parse(CONFIG.TEST_CLOSE_AT);
+    return isNaN(t) ? null : t;
+  }
+  function isClosed() {
+    var c = closeAt();
+    return c !== null && Date.now() >= c;
+  }
+  function closeMessage() {
+    var c = closeAt();
+    return "This test is now closed." +
+      (c ? " It was available until " + new Date(c).toLocaleString() + "." : "");
+  }
   var toastTimer = null;
   function toast(msg, isAlert) {
     var t = $("toast");
@@ -71,6 +85,16 @@
   function refreshResumeBox() {
     var s = loadSession();
     var box = $("resume-box");
+    if (isClosed()) {
+      if (s) clearSession();
+      hide("resume-box");
+      var err = $("start-error");
+      err.textContent = closeMessage();
+      show("start-error");
+      $("btn-start").disabled = true;
+      $("btn-start").style.opacity = "0.5";
+      return;
+    }
     if (s && s.endTime > Date.now() && !submitted) {
       show("resume-box");
       $("resume-time").textContent = fmtLeft(s.endTime - Date.now());
@@ -80,7 +104,21 @@
     }
   }
 
+  function showAvailability() {
+    var c = closeAt();
+    var el = $("available-until");
+    if (c) el.innerHTML = "⏳ Available until: <strong>" + esc(new Date(c).toLocaleString()) + "</strong>";
+    else el.textContent = "";
+  }
+
   function beginTest(name, email, existing) {
+    if (isClosed()) {
+      var err = $("start-error");
+      err.textContent = closeMessage();
+      show("start-error");
+      hide("screen-quiz"); hide("screen-result"); show("screen-start");
+      return;
+    }
     if (existing) {
       session = existing;
     } else {
@@ -192,6 +230,12 @@
     var el = $("timer");
     function tick() {
       var left = session.endTime - Date.now();
+      var c = closeAt();
+      if (c !== null && Date.now() >= c) {
+        el.textContent = "0:00";
+        finalize(true, "Test window closed — auto-submitted");
+        return;
+      }
       if (left <= 0) {
         el.textContent = "0:00";
         finalize(true, "Time expired — auto-submitted");
@@ -425,6 +469,7 @@
     var err = $("start-error");
     function fail(msg) { err.textContent = msg; show("start-error"); }
     hide("start-error");
+    if (isClosed()) return fail(closeMessage());
     if (!name) return fail("Please enter your full name.");
     if (!EMAIL_RE.test(email)) return fail("Please enter a valid email address.");
     if (emailUsed(email)) return fail("This email has already been used for this test. Each email can attempt the test only once.");
@@ -484,5 +529,6 @@
   });
 
   refreshResumeBox();
+  showAvailability();
   setInterval(refreshResumeBox, 5000);
 })();
