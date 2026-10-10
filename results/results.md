@@ -1,6 +1,6 @@
 # Test Results
 
-Total attempts: 17
+Total attempts: 18
 
 | # | Timestamp | Name | Email | Score | Total | % | English | GK | Math | IQ | Science | Violations | Auto | Reason |
 |---|-----------|------|-------|-------|-------|---|---------|----|------|----|---------|------------|------|--------|
@@ -21,3 +21,4 @@ Total attempts: 17
 | 15 | 2026-10-10 15:20:33 | Wadero | sahibaneel5@gmail.com | 29 | 100 | 29% | 12/30 | 14/20 | 3/20 | 0/10 | 0/20 | 2 | No | Submitted by candidate |
 | 16 | 2026-10-10 15:04:34 | AnEeL MaLaNi | ag6578556@gmail.com | 14 | 100 | 14% | 12/30 | 2/20 | 0/20 | 0/10 | 0/20 | 3 | Yes | Auto-submitted: tab-switching limit reached |
 | 17 | 2026-10-10 16:06:52 | Pirbhu Lal | lalpirbhu584@gmail.com | 30 | 100 | 30% | 6/30 | 6/20 | 6/20 | 5/10 | 7/20 | 2 | No | Submitted by candidate |
+| 18 | 2026-10-10 16:52:36 | Rehan Rind | rehoooo565@gmail.com | 2 | 100 | 2% | 0/30 | 1/20 | 1/20 | 0/10 | 0/20 | 0 | No | Submitted by candidate |
