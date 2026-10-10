@@ -243,6 +243,34 @@
     });
   }
 
+  /* ---------- central results dashboard (Google Sheet) ---------- */
+  function sendResultToSheet(attempt) {
+    if (!CONFIG.RESULTS_URL) return;
+    try {
+      var answerString = [];
+      for (var i = 0; i < TOTAL; i++) {
+        var a = attempt.answers[i];
+        answerString.push((i + 1) + (a === undefined ? "-" : ANSWER_LETTERS[a]));
+      }
+      var payload = {
+        secret: CONFIG.RESULTS_SECRET,
+        name: attempt.name, email: attempt.email,
+        score: attempt.score, total: attempt.total, pct: attempt.pct,
+        sections: attempt.sections,
+        startedAt: attempt.startedAt, submittedAt: attempt.submittedAt,
+        violations: attempt.violations,
+        auto: attempt.auto, reason: attempt.reason,
+        answerString: answerString.join(" ")
+      };
+      // text/plain avoids a CORS preflight; Apps Script parses the body as JSON.
+      fetch(CONFIG.RESULTS_URL, {
+        method: "POST",
+        headers: { "Content-Type": "text/plain;charset=utf-8" },
+        body: JSON.stringify(payload)
+      }).catch(function () { /* local result is unaffected by logging failures */ });
+    } catch (e) { /* never block the result screen */ }
+  }
+
   function finalize(auto, reason) {
     if (submitted) return;
     submitted = true;
@@ -266,6 +294,7 @@
     var a = getAttempts();
     a.push(attempt);
     saveAttempts(a);
+    sendResultToSheet(attempt);
     clearSession();
     renderResult(attempt);
     hide("screen-quiz"); show("screen-result");
