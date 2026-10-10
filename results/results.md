@@ -1,6 +1,6 @@
 # Test Results
 
-Total attempts: 15
+Total attempts: 17
 
 | # | Timestamp | Name | Email | Score | Total | % | English | GK | Math | IQ | Science | Violations | Auto | Reason |
 |---|-----------|------|-------|-------|-------|---|---------|----|------|----|---------|------------|------|--------|
@@ -19,3 +19,5 @@ Total attempts: 15
 | 13 | 2026-10-10 14:16:18 | Qamar Kumbhar | kumbharqamar143@gmail.com | 68 | 100 | 68% | 18/30 | 12/20 | 12/20 | 8/10 | 18/20 | 2 | No | Submitted by candidate |
 | 14 | 2026-10-10 13:51:39 | Akak Bba | govindraimeghwar10@gmail.com | 33 | 100 | 33% | 15/30 | 16/20 | 2/20 | 0/10 | 0/20 | 3 | Yes | Auto-submitted: tab-switching limit reached |
 | 15 | 2026-10-10 13:44:07 | Raja | aneelmalani3@gmail.com | 13 | 100 | 13% | 13/30 | 0/20 | 0/20 | 0/10 | 0/20 | 3 | Yes | Auto-submitted: tab-switching limit reached |
+| 16 | 2026-10-10 15:20:33 | Wadero | sahibaneel5@gmail.com | 29 | 100 | 29% | 12/30 | 14/20 | 3/20 | 0/10 | 0/20 | 2 | No | Submitted by candidate |
+| 17 | 2026-10-10 15:04:34 | AnEeL MaLaNi | ag6578556@gmail.com | 14 | 100 | 14% | 12/30 | 2/20 | 0/20 | 0/10 | 0/20 | 3 | Yes | Auto-submitted: tab-switching limit reached |
